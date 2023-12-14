@@ -1,0 +1,21 @@
+.weather-info-container {
+	margin-top: 20px;
+	background-color: white;
+	color: black;
+}
+.weather-info-header {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.weather-info-card {
+	border: 1px solid #ccc;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.weather-info-property {
+	margin-bottom: 5px;
+}

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./weatherForm.css"; // Make sure to adjust the path based on your project structure
 
-const WeatherForm = () => {
-	const [selectedLocation, setSelectedLocation] = useState("");
-	const [forecastDays, setForecastDays] = useState("");
+const WeatherForm = ({ fetchWeatherData }) => {
+	const [selectedLocation, setSelectedLocation] = useState("rochester"); // Set the default location to "Rochester, NY"
+	const [forecastDays, setForecastDays] = useState("3");
 
 	const handleLocationChange = (event) => {
 		setSelectedLocation(event.target.value);
@@ -17,7 +17,7 @@ const WeatherForm = () => {
 		event.preventDefault();
 		console.log("Location:", selectedLocation);
 		console.log("Forecast Days:", forecastDays);
-		// Add further logic as needed
+		fetchWeatherData(selectedLocation, parseInt(forecastDays, 10));
 	};
 
 	return (
