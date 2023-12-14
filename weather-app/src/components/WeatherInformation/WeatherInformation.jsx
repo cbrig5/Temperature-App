@@ -3,7 +3,7 @@ import "./weatherInformation.css";
 import useForceUpdate from "../../hooks/useForceUpdate";
 
 const WeatherInformation = ({ weatherData }) => {
-	const forceUpdate = useForceUpdate(); // Custom hook for forceUpdate
+	const forceUpdate = useForceUpdate(); // hook for forceUpdate
 
 	useEffect(() => {
 		forceUpdate();

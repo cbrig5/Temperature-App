@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./weatherForm.css"; // Make sure to adjust the path based on your project structure
+import "./weatherForm.css"; 
 
 const WeatherForm = ({ fetchWeatherData }) => {
-	const [selectedLocation, setSelectedLocation] = useState("rochester"); // Set the default location to "Rochester, NY"
+	const [selectedLocation, setSelectedLocation] = useState("rochester"); // Set the default location to "rochester"
 	const [forecastDays, setForecastDays] = useState("3");
 
 	const handleLocationChange = (event) => {
